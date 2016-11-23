@@ -1,0 +1,169 @@
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee" version="2.4">
+	<session-config>
+		<session-timeout>20</session-timeout>
+	</session-config>
+	<servlet>
+		<servlet-name>BusyServlet</servlet-name>
+		<servlet-class>BusyServlet</servlet-class>
+		<init-param>
+			<param-name>Busy</param-name>
+			<param-value>I am busy!</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>PostFormServlet</servlet-name>
+		<servlet-class>PostFormServlet</servlet-class>
+		<init-param>
+			<param-name>Post</param-name>
+			<param-value>I am post!</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>OpenFileServlet</servlet-name>
+		<servlet-class>OpenFileServlet</servlet-class>
+		<init-param>
+			<param-name>OpenFile</param-name>
+			<param-value>I am file!</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>SendErrorServlet</servlet-name>
+		<servlet-class>SendErrorServlet</servlet-class>
+		<init-param>
+			<param-name>error</param-name>
+			<param-value>I am error!</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>RedirectServlet</servlet-name>
+		<servlet-class>RedirectServlet</servlet-class>
+		<init-param>
+			<param-name>Redirect</param-name>
+			<param-value>I am redirect!</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>DemoServlet</servlet-name>
+		<servlet-class>DemoServlet</servlet-class>
+		<init-param>
+			<param-name>Demo</param-name>
+			<param-value>I am demo!</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>CookieServlet1</servlet-name>
+		<servlet-class>CookieServlet1</servlet-class>
+		<init-param>
+			<param-name>cookiefirst</param-name>
+			<param-value>this is first cookie!</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>CookieServlet2</servlet-name>
+		<servlet-class>CookieServlet2</servlet-class>
+		<init-param>
+			<param-name>CookieServletSecond</param-name>
+			<param-value>this is second cookie</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>CookieServlet3</servlet-name>
+		<servlet-class>CookieServlet3</servlet-class>
+		<init-param>
+			<param-name>CookieServletThird</param-name>
+			<param-value>this is third cookie</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>SessionServlet1</servlet-name>
+		<servlet-class>SessionServlet1</servlet-class>
+		<init-param>
+			<param-name>session1</param-name>
+			<param-value>this is first session</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>SessionServlet2</servlet-name>
+		<servlet-class>SessionServlet2</servlet-class>
+		<init-param>
+			<param-name>session2</param-name>
+			<param-value>this is second session</param-value>
+		</init-param>
+	</servlet>
+	<servlet>
+		<servlet-name>SessionServlet3</servlet-name>
+		<servlet-class>SessionServlet3</servlet-class>
+		<init-param>
+			<param-name>session3</param-name>
+			<param-value>this is third session</param-value>
+		</init-param>
+	</servlet>
+		<servlet>
+		<servlet-name>InitParam</servlet-name>
+		<servlet-class>InitParamServlet</servlet-class>
+		<init-param>
+			<param-name>TestParam</param-name>
+			<param-value>i am a test</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>BusyServlet</servlet-name>
+		<url-pattern>/busy</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+		<servlet-name>DemoServlet</servlet-name>
+		<url-pattern>/demo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+		<servlet-name>CookieServlet1</servlet-name>
+		<url-pattern>/cookie1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CookieServlet2</servlet-name>
+		<url-pattern>/cookie2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CookieServlet3</servlet-name>
+		<url-pattern>/cookie3</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SessionServlet1</servlet-name>
+		<url-pattern>/session1</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SessionServlet2</servlet-name>
+		<url-pattern>/session2</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SessionServlet3</servlet-name>
+		<url-pattern>/session3</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RedirectServlet</servlet-name>
+		<url-pattern>/redirect</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SendErrorServlet</servlet-name>
+		<url-pattern>/error</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>InitParam</servlet-name>
+		<url-pattern>/init</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>OpenFileServlet</servlet-name>
+		<url-pattern>/open</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PostFormServlet</servlet-name>
+		<url-pattern>/postform</url-pattern>
+	</servlet-mapping>
+	<context-param>
+		<param-name>webmaster</param-name>
+		<param-value>i am a webmaster</param-value>
+	</context-param>
+	<context-param>
+		<param-name>master</param-name>
+		<param-value>i am amaster</param-value>
+	</context-param>
+</web-app>
